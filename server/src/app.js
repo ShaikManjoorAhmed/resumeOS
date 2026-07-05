@@ -13,9 +13,11 @@ app.use(cookieParser());
 app.use(morgan("dev"));
 app.use("/api/auth", authRoutes);
 app.use("/api/resumes", resumeRoutes);
+app.use(notFound);
+app.use(errorHandler);
 
 app.get("/api/health", (req, res) => {
   res.status(200).json({ status: "ok", message: "ResumeOS API is running" });
 });
-
+import { notFound, errorHandler } from "./middlewares/errorHandler.js";
 export default app;
