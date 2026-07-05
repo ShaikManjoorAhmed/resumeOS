@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { getTemplateConfig } from "../constants/templates";
 
-const API_URL = "http://localhost:5000/api/resumes";
+const API_URL = `${import.meta.env.VITE_API_URL}/resumes`;
 
 const getGreeting = () => {
   const hour = new Date().getHours();
