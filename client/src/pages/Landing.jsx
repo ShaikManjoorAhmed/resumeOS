@@ -197,7 +197,7 @@ const Landing = () => {
 
       {/* Footer */}
       <footer className="px-8 py-8 border-t border-white/5 text-center text-xs text-white/30">
-        2026 ResumeOS. Built for job seekers, by job seekers.
+        2026 ResumeOS. Built by Shaik Manjoor Ahmed.
       </footer>
     </div>
   );
